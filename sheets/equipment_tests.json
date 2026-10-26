@@ -1,0 +1,18 @@
+[
+  {
+    "id": "Sword",
+    "slot": 30,
+    "mouseButton": 1,
+    "holdMs": 200,
+    "source": "Pinned SkyCraft input protocol; Minecraft attack button",
+    "expected": "A real Minecraft sword swing appears in Skyrim"
+  },
+  {
+    "id": "Bow",
+    "slot": 32,
+    "mouseButton": 3,
+    "holdMs": 1500,
+    "source": "Pinned SkyCraft input protocol; Minecraft use-item button",
+    "expected": "The real Minecraft bow charges, then releases one arrow"
+  }
+]

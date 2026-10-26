@@ -1,0 +1,42 @@
+[
+  {
+    "id": "TreasureChest",
+    "action": 18,
+    "reference": 225769,
+    "pitchRadians": 0.0,
+    "source": "Owned test only: aim at actual existing Bleak Falls container; no player or object moved",
+    "heightUnits": 35.0
+  },
+  {
+    "id": "Floor",
+    "action": 20,
+    "reference": 0,
+    "pitchRadians": 0.85,
+    "source": "Owned test only: look down for actual placement against Skyrim triangles",
+    "heightUnits": 0.0
+  },
+  {
+    "id": "InnContainer",
+    "action": 22,
+    "reference": 342500,
+    "pitchRadians": 0.0,
+    "heightUnits": 35.0,
+    "source": "Actual RiverwoodSleepingGiantInn container reference found read-only in own host36268"
+  },
+  {
+    "id": "InnDialogue",
+    "action": 23,
+    "reference": 78982,
+    "pitchRadians": 0.0,
+    "heightUnits": 85.0,
+    "source": "Actual Orgnar reference from own host actor table36268; vanilla dialogue test"
+  },
+  {
+    "id": "InnOwnedFood",
+    "action": 28,
+    "reference": 393459,
+    "pitchRadians": 0.0,
+    "heightUnits": 2.0,
+    "source": "Read-only live host38020: existing table food reference000600F3 base00064B3B within93units; owned test aims only, no placement or ownership change"
+  }
+]

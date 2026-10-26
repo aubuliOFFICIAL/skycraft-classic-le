@@ -1,0 +1,8 @@
+[
+  {
+    "id": "Steve",
+    "texture": "minecraft:textures/entity/player/wide/steve.png",
+    "model": "WIDE",
+    "source": "Creator explicitly selected Steve; texture read from installed Minecraft resources, never bundled"
+  }
+]

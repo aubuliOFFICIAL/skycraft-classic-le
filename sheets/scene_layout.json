@@ -1,0 +1,22 @@
+[
+ {"id":"CellReferences","value":76,"source":"LE TESObjectCELL objectList; read-only live array validated: 2516 references"},
+ {"id":"CellLoadedData","value":136,"source":"LE TESObjectCELL loadedData; live dungeon roots validated"},
+ {"id":"NodeChildren","value":168,"source":"LE NiNode children; live traversal validated 1717 objects"},
+ {"id":"WorldTransform","value":84,"source":"LE NiAVObject world transform; live finite transforms validated"},
+ {"id":"GeometryData","value":176,"source":"LE NiGeometry model data; live vertex/triangle counts validated"},
+ {"id":"SkinInstance","value":180,"source":"LE NiGeometry skin instance factual layout"},
+ {"id":"VertexCount","value":8,"source":"LE NiGeometryData vertex count factual layout"},
+ {"id":"Vertices","value":32,"source":"LE NiGeometryData vertex pointer factual layout; reader validation required"},
+ {"id":"TriangleCount","value":72,"source":"LE NiTriBasedGeomData triangle count factual layout"},
+ {"id":"TriangleListLength","value":76,"source":"LE NiTriShapeData index count factual layout; reader validation required"},
+ {"id":"TriangleIndices","value":80,"source":"LE NiTriShapeData indices factual layout; reader validation required"},
+ {"id":"MaximumNodes","value":4000,"source":"Bounded diagnostic traversal budget; not a game or player capacity"},
+ {"id":"MaximumTriangles","value":250000,"source":"Bounded diagnostic allocation budget; rejects oversized scenes"},
+ {"id":"BaseForm","value":36,"source":"LE TESObjectREFR baseForm factual offset validated by live ESM model lookup"},
+ {"id":"BaseBounds","value":20,"source":"LE TESBoundObject bounds, live actor record validation"},
+ {"id":"FormType","value":18,"source":"LE TESForm form type byte; live actor/reference counts validated"},
+ {"id":"LoadedState","value":68,"source":"LE TESObjectREFR loadedState; live roots validated"},
+ {"id":"LoadedNode","value":32,"source":"LE loadedState node; live placement transform validated against physics floor"},
+ {"id":"AvFlags","value":152,"source":"LE NiAVObject flags offset0x98"},
+ {"id":"AppCulled","value":1,"source":"NetImmerse NiAVObject APP_CULLED flag bit0; first-person geometry only"}
+]

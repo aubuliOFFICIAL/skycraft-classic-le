@@ -1,0 +1,30 @@
+[
+  {
+    "id": "Pause",
+    "action": 11,
+    "scanCode": 1,
+    "holdMs": 250,
+    "source": "Owned test only: native Escape through the game's existing keyboard device read"
+  },
+  {
+    "id": "Menu",
+    "action": 12,
+    "scanCode": 15,
+    "holdMs": 250,
+    "source": "Owned test only: native Tab through the game's existing keyboard device read"
+  },
+  {
+    "id": "QuickSave",
+    "action": 14,
+    "scanCode": 63,
+    "holdMs": 250,
+    "source": "Owned isolated save folder only: actual native F5 quicksave"
+  },
+  {
+    "id": "QuickLoad",
+    "action": 15,
+    "scanCode": 67,
+    "holdMs": 250,
+    "source": "Owned isolated save folder only, after an actual quicksave exists: native F9"
+  }
+]

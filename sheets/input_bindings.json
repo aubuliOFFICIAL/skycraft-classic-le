@@ -1,0 +1,184 @@
+[
+  {
+    "id": "Forward",
+    "virtualKey": 87,
+    "code": 26,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Left",
+    "virtualKey": 65,
+    "code": 4,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Back",
+    "virtualKey": 83,
+    "code": 22,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Right",
+    "virtualKey": 68,
+    "code": 7,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Inventory",
+    "virtualKey": 69,
+    "code": 8,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Drop",
+    "virtualKey": 81,
+    "code": 20,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "SwapHands",
+    "virtualKey": 70,
+    "code": 9,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Jump",
+    "virtualKey": 32,
+    "code": 44,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Sneak",
+    "virtualKey": 160,
+    "code": 225,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Sprint",
+    "virtualKey": 162,
+    "code": 224,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "View",
+    "virtualKey": 116,
+    "code": 62,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Options",
+    "virtualKey": 79,
+    "code": 18,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot1",
+    "virtualKey": 49,
+    "code": 30,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot2",
+    "virtualKey": 50,
+    "code": 31,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot3",
+    "virtualKey": 51,
+    "code": 32,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot4",
+    "virtualKey": 52,
+    "code": 33,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot5",
+    "virtualKey": 53,
+    "code": 34,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot6",
+    "virtualKey": 54,
+    "code": 35,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot7",
+    "virtualKey": 55,
+    "code": 36,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot8",
+    "virtualKey": 56,
+    "code": 37,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Slot9",
+    "virtualKey": 57,
+    "code": 38,
+    "kind": "key",
+    "source": "Minecraft key scancodes from pinned SkyCraft Input.cpp; Windows virtual-key API"
+  },
+  {
+    "id": "Attack",
+    "virtualKey": 1,
+    "code": 1,
+    "kind": "mouse",
+    "source": "Pinned SkyCraft input protocol SDL mouse button mapping"
+  },
+  {
+    "id": "Use",
+    "virtualKey": 2,
+    "code": 3,
+    "kind": "mouse",
+    "source": "Pinned SkyCraft input protocol SDL mouse button mapping"
+  },
+  {
+    "id": "Middle",
+    "virtualKey": 4,
+    "code": 2,
+    "kind": "mouse",
+    "source": "Pinned SkyCraft input protocol SDL mouse button mapping"
+  },
+  {
+    "id": "GuestOptions",
+    "virtualKey": 79,
+    "code": 41,
+    "kind": "key",
+    "source": "Pinned upstream O opens real Minecraft pause/options; native Escape stays Skyrim"
+  },
+  {
+    "id": "NativeActivate",
+    "virtualKey": 71,
+    "code": 10,
+    "kind": "key",
+    "source": "G queues real Skyrim activation on its native crosshair reference; never forwarded to Minecraft"
+  }
+]

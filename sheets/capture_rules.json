@@ -1,0 +1,6 @@
+[
+ {"id":"IntervalMs","value":100,"source":"Owned game-only QA recording; ten actual game frames per second"},
+ {"id":"DurationMs","value":6000,"source":"Owned equipment test includes charge, release, flight or melee impact"},
+ {"id":"MaximumWidth","value":3840,"source":"Bound CPU capture allocation to a 4K game framebuffer"},
+ {"id":"MaximumHeight","value":2160,"source":"Bound CPU capture allocation to a 4K game framebuffer"}
+]

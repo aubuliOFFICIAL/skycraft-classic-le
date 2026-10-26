@@ -1,0 +1,18 @@
+[
+ {"id":"Bsa","value":104,"source":"Installed Skyrim mesh archive header verified BSA version104"},
+ {"id":"RecordHeader","value":24,"source":"Installed Skyrim.esm TES5 record headers"},
+ {"id":"HavokUnits","value":69.99125,"source":"Pinned MIT SkyCraft Collision.cpp Havok-to-game unit conversion"},
+ {"id":"BlockUnits","value":70,"source":"Pinned upstream protocol units per Minecraft block"},
+ {"id":"RegionSize","value":8,"source":"Pinned Minecraft guest collision region size"},
+ {"id":"MeshByteLimit","value":67108864,"source":"Runtime archive-read allocation limit"},
+ {"id":"CollisionRadius","value":64,"source":"Port collision window includes first-room bow trajectories; actual loaded Skyrim static collision only, 64 blocks around player"},
+ {"id":"LayerStatic","value":1,"source":"NIF SkyrimLayer enum STATIC"},
+ {"id":"LayerAnimStatic","value":2,"source":"NIF SkyrimLayer enum ANIMSTATIC"},
+ {"id":"LayerTransparent","value":3,"source":"NIF SkyrimLayer enum TRANSPARENT"},
+ {"id":"LayerTrees","value":9,"source":"NIF SkyrimLayer enum TREES"},
+ {"id":"LayerProps","value":10,"source":"NIF SkyrimLayer enum PROPS"},
+ {"id":"LayerTerrain","value":13,"source":"NIF SkyrimLayer enum TERRAIN"},
+ {"id":"LayerGround","value":17,"source":"NIF SkyrimLayer enum GROUND"},
+ {"id":"LayerInvisibleWall","value":27,"source":"NIF SkyrimLayer enum INVISIBLE_WALL"},
+ {"id":"LayerStairHelper","value":31,"source":"NIF SkyrimLayer enum STAIRHELPER"}
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "DropTorch",
+    "action": 16,
+    "select": 35,
+    "key": 20,
+    "holdMs": 200,
+    "source": "Owned QA only: select existing torch stack then real Minecraft Q; no entities or inventory fabricated",
+    "kind": 1,
+    "extraKey": 0
+  },
+  {
+    "id": "View",
+    "action": 17,
+    "select": 0,
+    "key": 62,
+    "holdMs": 200,
+    "source": "Owned QA only: real Minecraft perspective key",
+    "kind": 1,
+    "extraKey": 0
+  },
+  {
+    "id": "PlacePlanks",
+    "action": 19,
+    "select": 34,
+    "key": 3,
+    "kind": 2,
+    "holdMs": 200,
+    "source": "Owned QA only: use existing planks through real Minecraft right-click; inventory must decrement and mesh must appear",
+    "extraKey": 0
+  },
+  {
+    "id": "MinePlank",
+    "action": 21,
+    "select": 31,
+    "key": 1,
+    "kind": 2,
+    "holdMs": 4000,
+    "source": "Owned QA only: real diamond pickaxe mining on actual crosshair block; no break command or item grant",
+    "extraKey": 0
+  },
+  {
+    "id": "JumpOntoBlock",
+    "action": 26,
+    "select": 0,
+    "key": 44,
+    "kind": 1,
+    "extraKey": 26,
+    "holdMs": 300,
+    "source": "Owned QA only: actual Minecraft Space+W for300ms; observe real jump/collision and feet resting on placed block"
+  },
+  {
+    "id": "Sneak",
+    "action": 27,
+    "select": 0,
+    "key": 225,
+    "kind": 1,
+    "extraKey": 0,
+    "holdMs": 4000,
+    "source": "Owned QA only: real Minecraft sneak held then released; native state and detection eye must follow without fabricated detection"
+  }
+]

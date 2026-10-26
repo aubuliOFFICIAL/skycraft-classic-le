@@ -1,0 +1,4 @@
+[
+ {"id":"Take","action":24,"scanCode":18,"event":"Accept","context":1,"source":"Actual original Skyrim menu keyboard map in own host2548: E Accept; invoke normal UI handlers, never add an item directly"},
+ {"id":"Close","action":25,"scanCode":15,"event":"Cancel","context":1,"source":"Actual original Skyrim menu keyboard map in own host2548: Tab Cancel; verify Minecraft resumes after real native menu closes"}
+]

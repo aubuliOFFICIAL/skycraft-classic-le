@@ -1,0 +1,602 @@
+[
+  {
+    "id": "ExecutableStamp",
+    "value": 1363377381,
+    "source": "installed TESV.exe PE timestamp"
+  },
+  {
+    "id": "ExecutableSize",
+    "value": 27336704,
+    "source": "installed TESV.exe PE SizeOfImage"
+  },
+  {
+    "id": "PreferredBase",
+    "value": 4194304,
+    "source": "installed TESV.exe PE ImageBase"
+  },
+  {
+    "id": "RendererSingleton",
+    "value": 28997372,
+    "source": "SKSE classic 1.7.3 NiRenderer.cpp, singleton VA"
+  },
+  {
+    "id": "RendererDeviceOffset",
+    "value": 56,
+    "source": "SKSE classic 1.7.3 NiRenderer.h documented device offset"
+  },
+  {
+    "id": "PlayerSingleton",
+    "value": 28502244,
+    "source": "SKSE classic 1.7.3 GameAPI.cpp, player singleton VA"
+  },
+  {
+    "id": "PlayerPositionOffset",
+    "value": 52,
+    "source": "SKSE classic 1.7.3 GameReferences.h TESObjectREFR position"
+  },
+  {
+    "id": "PlayerRotationOffset",
+    "value": 40,
+    "source": "SKSE classic 1.7.3 GameReferences.h TESObjectREFR rotation"
+  },
+  {
+    "id": "ParentCellOffset",
+    "value": 64,
+    "source": "SKSE classic 1.7.3 GameReferences.h parentCell"
+  },
+  {
+    "id": "FormIdOffset",
+    "value": 12,
+    "source": "SKSE classic 1.7.3 GameForms.h TESForm formID"
+  },
+  {
+    "id": "PresentSlot",
+    "value": 17,
+    "source": "Windows SDK IDirect3DDevice9::Present method order; draw only at final presentation"
+  },
+  {
+    "id": "MainSingleton",
+    "value": 28502112,
+    "source": "libSkyrim classic Main.cpp factual singleton address"
+  },
+  {
+    "id": "MainPauseOffset",
+    "value": 10,
+    "source": "libSkyrim classic Main.h Main::bPaused offset"
+  },
+  {
+    "id": "MainThreadOffset",
+    "value": 20,
+    "source": "libSkyrim classic Main.h Main::threadID factual offset; compare before engine calls"
+  },
+  {
+    "id": "ActorValueOwnerOffset",
+    "value": 96,
+    "source": "LE Actor ActorValueOwner subobject ABI"
+  },
+  {
+    "id": "HealthValue",
+    "value": 24,
+    "source": "LE ActorValue enum Health"
+  },
+  {
+    "id": "GetCurrentValue",
+    "value": 7207360,
+    "source": "LE Actor ActorValueOwner GetActorValueCurrent VA0x006DF9C0"
+  },
+  {
+    "id": "GetMaximumValue",
+    "value": 7207568,
+    "source": "LE Actor ActorValueOwner GetActorValueMaximum VA0x006DFA90"
+  },
+  {
+    "id": "GetReferenceName",
+    "value": 5105696,
+    "source": "LE TESObjectREFR GetReferenceName VA0x004DE820"
+  },
+  {
+    "id": "GetLevel",
+    "value": 6976288,
+    "source": "LE Actor GetLevel VA0x006A7320"
+  },
+  {
+    "id": "IsHostile",
+    "value": 7160672,
+    "source": "LE Actor IsHostileToActor VA0x006D4360"
+  },
+  {
+    "id": "ModifyActorValue",
+    "value": 7211200,
+    "source": "LE Actor AV owner slot6 VA0x006E08C0; live disassembly verified owner adjustment -0x60 and ret12"
+  },
+  {
+    "id": "MoveReference",
+    "value": 9488880,
+    "source": "Classic SKSE factual MoveRefrToPosition VA0x0090C9F0 and typed ABI"
+  },
+  {
+    "id": "InvalidHandle",
+    "value": 19990064,
+    "source": "Classic SKSE GameReferences.cpp invalid reference handle VA0x01310630"
+  },
+  {
+    "id": "IsDead",
+    "value": 6976560,
+    "source": "LE Actor IsDead(bool) VA0x006A7430; health alone does not indicate scripted corpses"
+  },
+  {
+    "id": "EnableAI",
+    "value": 6989456,
+    "source": "LE Actor EnableAI(bool) VA0x006AA690; live disassembly verified toggles bit2 at actor+0x7c"
+  },
+  {
+    "id": "ActorFlagsAI",
+    "value": 124,
+    "source": "Live EnableAI disassembly actor+0x7c bit2"
+  },
+  {
+    "id": "WorldToClip",
+    "value": 28568080,
+    "source": "Classic SKSE NiObjects.cpp g_worldToCamMatrix VA0x01B3EA10; live projection disassembly verified row-major clip matrix"
+  },
+  {
+    "id": "ControlsSingleton",
+    "value": 19821652,
+    "source": "Classic SKSE PlayerControls::GetSingleton VA0x012E7454"
+  },
+  {
+    "id": "FirstPersonSkeleton",
+    "value": 1420,
+    "source": "Classic SKSE PlayerCharacter::firstPersonSkeleton offset0x58C"
+  },
+  {
+    "id": "AttackHandlerOffset",
+    "value": 332,
+    "source": "Classic PlayerControls::attackBlockHandler offset0x14C"
+  },
+  {
+    "id": "AttackHandlerCanProcess",
+    "value": 7807376,
+    "source": "Classic AttackBlockHandler::CanProcess VA0x00772190"
+  },
+  {
+    "id": "HandlerEnabled",
+    "value": 4,
+    "source": "Classic PlayerInputHandler::enabled UInt32 offset4"
+  },
+  {
+    "id": "SetDepthSlot",
+    "value": 39,
+    "source": "Windows SDK IDirect3DDevice9::SetDepthStencilSurface method order"
+  },
+  {
+    "id": "ResetSlot",
+    "value": 16,
+    "source": "Windows SDK IDirect3DDevice9::Reset; release retained default-pool depth before reset"
+  },
+  {
+    "id": "DisableVanitySetting",
+    "value": 19604124,
+    "source": "Live original1.9.32 INI collection verified bDisableAutoVanityMode:Camera object VA0x012B229C"
+  },
+  {
+    "id": "SettingData",
+    "value": 4,
+    "source": "Classic Setting union data offset4; bool changes only one byte"
+  },
+  {
+    "id": "PlayerCameraSingleton",
+    "value": 19821192,
+    "source": "Classic PlayerCamera singleton pointer VA0x012E7288"
+  },
+  {
+    "id": "CameraCurrentState",
+    "value": 32,
+    "source": "TESCamera cameraState offset0x20"
+  },
+  {
+    "id": "CameraStates",
+    "value": 108,
+    "source": "PlayerCamera cameraStates offset0x6C; first-person entry0"
+  },
+  {
+    "id": "CameraStateId",
+    "value": 12,
+    "source": "TESCameraState stateId offset0x0C; observed1 while camera orbited during test"
+  },
+  {
+    "id": "SetCameraState",
+    "value": 6632400,
+    "source": "Classic TESCamera::SetCameraState(TESCameraState*) VA0x006533D0"
+  },
+  {
+    "id": "HitDataConstructor",
+    "value": 7959072,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitDataDestructor",
+    "value": 7959104,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "PopulateProjectileHitData",
+    "value": 7965376,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "ProcessIncomingAttack",
+    "value": 7227248,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitDataBytes",
+    "value": 120,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitPositionOffset",
+    "value": 0,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitDirectionOffset",
+    "value": 12,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitDamageOffset",
+    "value": 56,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitPhysicalDamageOffset",
+    "value": 60,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitLimbDamageOffset",
+    "value": 64,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitBlockedDamageOffset",
+    "value": 68,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitFlagsOffset",
+    "value": 104,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitSkillOffset",
+    "value": 112,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "SetReferencePosition",
+    "value": 5098400,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "MovementHandlerOffset",
+    "value": 296,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "JumpHandlerOffset",
+    "value": 324,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "SprintHandlerOffset",
+    "value": 304,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "RunHandlerOffset",
+    "value": 336,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "SneakHandlerOffset",
+    "value": 340,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "SetActorPosition",
+    "value": 7005296,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "FirstPersonTranslation",
+    "value": 8624432,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "CameraTranslationSlot",
+    "value": 5,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "CameraAllowTogglePov",
+    "value": 208,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "CollisionReadyOffset",
+    "value": 64,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "ActorFlags2",
+    "value": 312,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "EssentialMask",
+    "value": 262144,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "KillActor",
+    "value": 6996896,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "SetPlayerPitch",
+    "value": 7005504,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "SetPlayerYaw",
+    "value": 6981904,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "GetActorMinBounds",
+    "value": 6985104,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "GetActorMaxBounds",
+    "value": 6985264,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "CreateRefHandle",
+    "value": 7067328,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "LookupFormById",
+    "value": 4528688,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitAttackerOffset",
+    "value": 24,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitVictimOffset",
+    "value": 28,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "HitWeaponOffset",
+    "value": 40,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "WeaponFormType",
+    "value": 41,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "CreateRefHandleByRef",
+    "value": 6671360,
+    "source": "DavidJCobb/skyrim-classic-re AttackProcessing.h and Forms/Actor.h; 1.9.32 live constructor/populate/ProcessIncomingAttack ABI disassembly checked 2026-10-25"
+  },
+  {
+    "id": "InputManagerSingleton",
+    "value": 19821656,
+    "source": "Official SKSE1.7.3 GameInput.h/.cpp factual LE mapping layout; read-only live verification required before ownership"
+  },
+  {
+    "id": "InputContextsOffset",
+    "value": 52,
+    "source": "Official SKSE1.7.3 GameInput.h/.cpp factual LE mapping layout; read-only live verification required before ownership"
+  },
+  {
+    "id": "InputMappingStride",
+    "value": 16,
+    "source": "Official SKSE1.7.3 GameInput.h/.cpp factual LE mapping layout; read-only live verification required before ownership"
+  },
+  {
+    "id": "InputMappingButtonOffset",
+    "value": 4,
+    "source": "Official SKSE1.7.3 GameInput.h/.cpp factual LE mapping layout; read-only live verification required before ownership"
+  },
+  {
+    "id": "LookHandlerOffset",
+    "value": 300,
+    "source": "Official SKSE1.7.3 PlayerControls inputHandlers and libSkyrim PlayerControls factual LE layout; reversible disable only during real guest screen"
+  },
+  {
+    "id": "DeviceManagerSingleton",
+    "value": 28501796,
+    "source": "libSkyrim InputManager/InputDevice factual LE layout; actual objects/vtables/raw devices verified read-only in live PID24880"
+  },
+  {
+    "id": "KeyboardObjectOffset",
+    "value": 52,
+    "source": "libSkyrim InputManager/InputDevice factual LE layout; actual objects/vtables/raw devices verified read-only in live PID24880"
+  },
+  {
+    "id": "MouseObjectOffset",
+    "value": 56,
+    "source": "libSkyrim InputManager/InputDevice factual LE layout; actual objects/vtables/raw devices verified read-only in live PID24880"
+  },
+  {
+    "id": "KeyboardRawDeviceOffset",
+    "value": 40,
+    "source": "libSkyrim InputManager/InputDevice factual LE layout; actual objects/vtables/raw devices verified read-only in live PID24880"
+  },
+  {
+    "id": "MouseRawDeviceOffset",
+    "value": 44,
+    "source": "libSkyrim InputManager/InputDevice factual LE layout; actual objects/vtables/raw devices verified read-only in live PID24880"
+  },
+  {
+    "id": "KeyboardObjectVtable",
+    "value": 17886644,
+    "source": "libSkyrim InputManager/InputDevice factual LE layout; actual objects/vtables/raw devices verified read-only in live PID24880"
+  },
+  {
+    "id": "MouseObjectVtable",
+    "value": 17886612,
+    "source": "libSkyrim InputManager/InputDevice factual LE layout; actual objects/vtables/raw devices verified read-only in live PID24880"
+  },
+  {
+    "id": "MenuManagerSingleton",
+    "value": 19805512,
+    "source": "Official SKSE/libSkyrim MenuManager factual LE layout; read-only live JournalMenu counter verification"
+  },
+  {
+    "id": "MenuPauseCount",
+    "value": 200,
+    "source": "Official SKSE/libSkyrim MenuManager factual LE layout; read-only live JournalMenu counter verification"
+  },
+  {
+    "id": "MenuItemCount",
+    "value": 204,
+    "source": "Official SKSE/libSkyrim MenuManager factual LE layout; read-only live JournalMenu counter verification"
+  },
+  {
+    "id": "MenuModalCount",
+    "value": 224,
+    "source": "Official SKSE/libSkyrim MenuManager factual LE layout; read-only live JournalMenu counter verification"
+  },
+  {
+    "id": "ActorSitSleepFlags",
+    "value": 104,
+    "source": "libSkyrim Actor ActorState at0x64 plus flags04; read only mask0x3C000 for furniture state"
+  },
+  {
+    "id": "ActorSitSleepMask",
+    "value": 245760,
+    "source": "libSkyrim ActorState::kState_Sit, 0xF shifted14"
+  },
+  {
+    "id": "InputControlState",
+    "value": 144,
+    "source": "libSkyrim InputMappingManager::controlState +0x90; original Skyrim layout"
+  },
+  {
+    "id": "MovementControlMask",
+    "value": 1025,
+    "source": "libSkyrim InputMappingManager::kControlState_Movement 0x401; never enable controls disabled by a quest"
+  },
+  {
+    "id": "CrosshairHolderSingleton",
+    "value": 28382680,
+    "source": "SKSE/libSkyrim CrosshairRefHandleHolder singleton0x01B115D8, live reachable barrel handle verified in host28404"
+  },
+  {
+    "id": "CrosshairHandleOffset",
+    "value": 4,
+    "source": "Official SKSE/libSkyrim CrosshairRefHandleHolder::crosshairRefHandle"
+  },
+  {
+    "id": "LookupReferenceByHandle",
+    "value": 4886912,
+    "source": "Official SKSE LookupREFRByHandle0x004A9180 cdecl; actual live prologue checked in host28404; returns owned ref"
+  },
+  {
+    "id": "ActivateReference",
+    "value": 5128752,
+    "source": "libSkyrim TESObjectREFR::Activate_Impl0x004E4230 thiscall(reference,activator,false,false,true,false); live prologue checked host28404"
+  },
+  {
+    "id": "HandleObjectOffset",
+    "value": 20,
+    "source": "Official SKSE/libSkyrim TESObjectREFR BSHandleRefObject at0x14"
+  },
+  {
+    "id": "HandleCountOffset",
+    "value": 24,
+    "source": "BSHandleRefObject NiRefObject refcount+4, reference+0x18; release the owned lookup reference"
+  },
+  {
+    "id": "HandleCountMask",
+    "value": 1023,
+    "source": "Official SKSE BSHandleRefObject ref count low10bits; virtual DeleteThis only when zero"
+  },
+  {
+    "id": "MenuControlsSingleton",
+    "value": 28380508,
+    "source": "Official SKSE/libSkyrim MenuControls singleton; native menu input for owned QA"
+  },
+  {
+    "id": "MenuControlsReceive",
+    "value": 8889296,
+    "source": "libSkyrim MenuControls::ReceiveEvent(InputEvent**,source), main-thread synchronous native UI pipeline"
+  },
+  {
+    "id": "ButtonEventVtable",
+    "value": 17646816,
+    "source": "libSkyrim ButtonEvent factual classic vtable; own event data only"
+  },
+  {
+    "id": "MenuStackOffset",
+    "value": 148,
+    "source": "Official SKSE/libSkyrim MenuManager::menuStack0x94, read-only live stack verified for native menus"
+  },
+  {
+    "id": "MenuFlagsOffset",
+    "value": 16,
+    "source": "Official SKSE/libSkyrim IMenu::flags0x10; ShowCursor catches native DialogueMenu as upstream SkyCraft does"
+  },
+  {
+    "id": "MenuCursorMask",
+    "value": 4,
+    "source": "Official SKSE/libSkyrim IMenu kType_ShowCursor"
+  },
+  {
+    "id": "SetActorSneaking",
+    "value": 6994656,
+    "source": "Classic Actor::SetSneaking(bool), live decrypted function verified: animation boolean, sneak ability and native ActorState0x200; original Skyrim1.9.32"
+  },
+  {
+    "id": "ActorSneakMask",
+    "value": 512,
+    "source": "Classic ActorState flags04 at actor+0x68, factual kState_Sneaking0x200"
+  },
+  {
+    "id": "ActivateHandlerOffset",
+    "value": 320,
+    "source": "Classic PlayerControls::activateHandler0x140"
+  },
+  {
+    "id": "ActivateHandlerProcess",
+    "value": 7808192,
+    "source": "Classic ActivateHandler::ProcessButton(ButtonEvent*,Data14*), live prologue and normal activation flow verified"
+  },
+  {
+    "id": "PlayerControlDataOffset",
+    "value": 20,
+    "source": "Classic PlayerControls::Data14 offset0x14"
+  },
+  {
+    "id": "PlayerActivateTarget",
+    "value": 7615792,
+    "source": "Live classic ActivateHandler short-release call0x0077265A invokes PlayerCharacter thiscall0x00743530 no args: native crosshair, ownership/crime gate0x00743270 then activation; ret0x007436BF verified"
+  },
+  {
+    "id": "ActivateDisabledOffset",
+    "value": 15,
+    "source": "Classic ActivateHandler::disabled0x0F checked at ProcessButton entry; honor native hands-bound restrictions"
+  }
+]

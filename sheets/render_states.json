@@ -1,0 +1,92 @@
+[
+  {
+    "id": "NoFixedFunctionLighting",
+    "state": "D3DRS_LIGHTING",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "NoOverlayFog",
+    "state": "D3DRS_FOGENABLE",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "NoAlphaTest",
+    "state": "D3DRS_ALPHATESTENABLE",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "NoStencilTest",
+    "state": "D3DRS_STENCILENABLE",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "NoOverlayDepth",
+    "state": "D3DRS_ZENABLE",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "NoDepthWrites",
+    "state": "D3DRS_ZWRITEENABLE",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "TwoSidedOverlay",
+    "state": "D3DRS_CULLMODE",
+    "value": "D3DCULL_NONE",
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "PremultipliedAlpha",
+    "state": "D3DRS_ALPHABLENDENABLE",
+    "value": 1,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "SourceAlphaBlend",
+    "state": "D3DRS_SRCBLEND",
+    "value": "D3DBLEND_ONE",
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "DestinationAlphaBlend",
+    "state": "D3DRS_DESTBLEND",
+    "value": "D3DBLEND_INVSRCALPHA",
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "AdditiveBlendEquation",
+    "state": "D3DRS_BLENDOP",
+    "value": "D3DBLENDOP_ADD",
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "NoSeparateAlpha",
+    "state": "D3DRS_SEPARATEALPHABLENDENABLE",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "NoScissor",
+    "state": "D3DRS_SCISSORTESTENABLE",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "DisplayEncodedOverlay",
+    "state": "D3DRS_SRGBWRITEENABLE",
+    "value": 0,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  },
+  {
+    "id": "WriteRgba",
+    "state": "D3DRS_COLORWRITEENABLE",
+    "value": 15,
+    "source": "Direct3D 9 render-state API; premultiplied display-space Minecraft HUD"
+  }
+]

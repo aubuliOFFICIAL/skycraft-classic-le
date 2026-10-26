@@ -1,0 +1,20 @@
+[
+ {"id":"DepthTest","state":"D3DRS_ZENABLE","value":"D3DZB_TRUE","source":"D3D9 actual Skyrim scene depth; skip pass if no matching surface"},
+ {"id":"PreserveNativeDepth","state":"D3DRS_ZWRITEENABLE","value":0,"source":"Do not alter Skyrim depth after its world draw"},
+ {"id":"DepthCompare","state":"D3DRS_ZFUNC","value":"D3DCMP_LESSEQUAL","source":"Classic Skyrim normal depth convention; use retained scene depth, never unrelated Present-bound shadow depth; visual acceptance pending"},
+ {"id":"NoFixedLights","state":"D3DRS_LIGHTING","value":0,"source":"Guest vertex colors; do not reuse native material state"},
+ {"id":"NoFog","state":"D3DRS_FOGENABLE","value":0,"source":"Initial projectile renderer; Skyrim fog integration remains pending"},
+ {"id":"NoStencil","state":"D3DRS_STENCILENABLE","value":0,"source":"Do not inherit native stencil tests"},
+ {"id":"BothSides","state":"D3DRS_CULLMODE","value":"D3DCULL_NONE","source":"Minecraft exports triangle faces and arrow quads"},
+ {"id":"Blend","state":"D3DRS_ALPHABLENDENABLE","value":1,"source":"Guest entity texture alpha"},
+ {"id":"SourceAlpha","state":"D3DRS_SRCBLEND","value":"D3DBLEND_SRCALPHA","source":"Straight-alpha Minecraft world textures"},
+ {"id":"DestinationAlpha","state":"D3DRS_DESTBLEND","value":"D3DBLEND_INVSRCALPHA","source":"Straight-alpha Minecraft world textures"},
+ {"id":"Cutout","state":"D3DRS_ALPHATESTENABLE","value":1,"source":"Discard transparent arrow texture pixels"},
+ {"id":"CutoutCompare","state":"D3DRS_ALPHAFUNC","value":"D3DCMP_GREATER","source":"Texture alpha cutout"},
+ {"id":"CutoutThreshold","state":"D3DRS_ALPHAREF","value":1,"source":"Reject zero alpha; retains antialias edges"},
+ {"id":"ColorMask","state":"D3DRS_COLORWRITEENABLE","value":15,"source":"Back-buffer color channels only"},
+ {"id":"LinearOutput","state":"D3DRS_SRGBWRITEENABLE","value":0,"source":"Initial display-space projectile pass; color grading remains pending"},
+ {"id":"BlendAdd","state":"D3DRS_BLENDOP","value":"D3DBLENDOP_ADD","source":"Do not inherit native subtractive effect blending"},
+ {"id":"UnifiedAlpha","state":"D3DRS_SEPARATEALPHABLENDENABLE","value":0,"source":"Straight-alpha entity pass"},
+ {"id":"NoNativeScissor","state":"D3DRS_SCISSORTESTENABLE","value":0,"source":"Do not inherit Skyrim HUD scissor rectangles for world geometry"}
+]

@@ -1,0 +1,10 @@
+/tools/*.zip
+/tools/*-source.json
+/tools/llvm-mingw-*/
+/tools/jdk25/
+/tools/prism/
+/build/
+/upstream/
+/private/
+*.log
+__pycache__/

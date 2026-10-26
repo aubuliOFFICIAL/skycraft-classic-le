@@ -1,0 +1,16 @@
+[
+  {
+    "id": "EntryChamber",
+    "cell": 225758,
+    "enemies": [
+      237540,
+      237538
+    ],
+    "chest": 225769,
+    "reachUnits": 175,
+    "title": "Bleak Falls Raid",
+    "briefing": "Defeat both bandits, then reach the treasure chest.",
+    "completeText": "Chamber cleared - treasure reached",
+    "source": "Creator solo dungeon raid; actual loaded original Skyrim cell/actor/container references inspected in place; no game assets copied"
+  }
+]

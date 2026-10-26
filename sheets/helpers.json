@@ -1,0 +1,3 @@
+[
+ {"id":"Collision","relativePath":"SkyCraftClassic\\bridge\\ClassicCollision.exe","arguments":"--watch","hideWindow":true,"source":"Own MIT collision reader, bound to exact host PID; reads player's installed archives in RAM only"}
+]

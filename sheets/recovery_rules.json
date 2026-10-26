@@ -1,0 +1,3 @@
+[
+  {"id":"LostBow","request":"skycraft-classic/recover-bow.request","item":"minecraft:bow","preferredSlot":2,"count":1,"source":"Creator explicitly requested replacement of bow lost before item-floor collision fix; consume one local request, never replenish during normal play"}
+]

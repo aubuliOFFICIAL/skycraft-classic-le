@@ -1,0 +1,179 @@
+[
+  {
+    "id": "bootstrap",
+    "owner": "host",
+    "route": "x86 DirectInput proxy",
+    "source": "TESV.exe import table and repeated live dungeon launches",
+    "requires": [],
+    "acceptance": "Original Skyrim loads proxy; system DirectInput remains usable",
+    "verification": "verified"
+  },
+  {
+    "id": "transport",
+    "owner": "both",
+    "route": "fixed-width shared memory",
+    "source": "protocol/skycraft_protocol.h; live host/JVM state and HUD exchange; build/protocol-evidence.json",
+    "requires": [
+      "bootstrap"
+    ],
+    "acceptance": "x86 host and x64 JVM exchange consistent heartbeat and state",
+    "verification": "verified"
+  },
+  {
+    "id": "rendering",
+    "owner": "host",
+    "route": "Direct3D 9 native world pass and HUD",
+    "source": "src/world_render.cpp; src/runtime.cpp; sheets/world_render_states.json; recorded normal-depth arrow flight",
+    "requires": [
+      "transport"
+    ],
+    "acceptance": "Minecraft sword, bow, arrows and HUD appear in Skyrim with correct depth",
+    "verification": "pending"
+  },
+  {
+    "id": "input",
+    "owner": "host",
+    "route": "Observe own DirectInput device reads; preserve native results; map bound actions to guest",
+    "source": "src/device_input.cpp; src/runtime.cpp; sheets/input_bindings.json; sheets/native_input_bindings.json; sheets/cursor.json",
+    "requires": [
+      "transport"
+    ],
+    "acceptance": "Sword attack, charged bow release, inventory and native menus respond",
+    "verification": "pending"
+  },
+  {
+    "id": "movement",
+    "owner": "guest",
+    "route": "real Minecraft movement with host pose adapter",
+    "source": "src/runtime.cpp LE Actor::SetPosition and first-person translation; bounded movement observations",
+    "requires": [
+      "input",
+      "collision"
+    ],
+    "acceptance": "Walk, jump and transition through dungeon door without desync",
+    "verification": "pending"
+  },
+  {
+    "id": "collision",
+    "owner": "host",
+    "route": "LE Havok collision decoded from the installed game's ESM/BSA/NIF files in RAM",
+    "source": "tools/collision_bridge.py; tools/collision_assets.py; bundled read-in-place helper; sheets/collision_formats.json",
+    "requires": [
+      "transport"
+    ],
+    "acceptance": "Player and arrows respect dungeon walls, floor and stairs",
+    "verification": "pending"
+  },
+  {
+    "id": "combat",
+    "owner": "both",
+    "route": "Minecraft hits and projectiles; host actor proxy table",
+    "source": "src/runtime.cpp; sheets/combat_rules.json; sheets/combat_weapons.json; build/visible-combat-observation.json",
+    "requires": [
+      "transport",
+      "collision",
+      "movement"
+    ],
+    "acceptance": "Sword and arrow damage a Skyrim enemy; enemy damages player; death works",
+    "verification": "pending"
+  },
+  {
+    "id": "world",
+    "owner": "host",
+    "route": "Original Skyrim interiors and exterior world with real Minecraft additions",
+    "source": "Creator superseded raid-only start with original Skyrim story; original cells and quests stay authoritative",
+    "requires": [
+      "collision",
+      "interaction",
+      "rendering"
+    ],
+    "acceptance": "A real Skyrim door transitions between cells; guest pose/collision and per-location builds follow without duplicates or loss",
+    "verification": "pending"
+  },
+  {
+    "id": "lifecycle",
+    "owner": "both",
+    "route": "owned guest process only; version and heartbeat checks",
+    "source": "src/helper.cpp; tools/build_collision_helper.py; docs/CONTRACT.md",
+    "requires": [
+      "bootstrap",
+      "transport"
+    ],
+    "acceptance": "One-click start and clean stop leave other games and saves alone",
+    "verification": "pending"
+  },
+  {
+    "id": "pickup",
+    "owner": "guest",
+    "route": "Real ItemEntity triangle collision and vanilla playerTouch; actual dropped item models in native scene",
+    "source": "Creator reported lost drops; guest ClassicGameplay and ItemGroundMixin; sheets/pickup_rules.json and guest_exports.json; build/pickup-avatar-observation.json (entry-room pickup and rear-view acceptance only)",
+    "requires": [
+      "collision",
+      "rendering"
+    ],
+    "acceptance": "Drop an actual item, see it rest on the dungeon floor, walk over it after its normal delay and recover its actual inventory count",
+    "verification": "verified"
+  },
+  {
+    "id": "avatar",
+    "owner": "both",
+    "route": "Steve from installed Minecraft resources; real player entity render and native geometry ownership",
+    "source": "Creator chose Steve; sheets/avatar_rules.json; SteveSkinMixin; native camera translation; build/pickup-avatar-observation.json (entry-room pickup and rear-view acceptance only)",
+    "requires": [
+      "rendering",
+      "input"
+    ],
+    "acceptance": "Steve appears in inventory and detached camera; native Dragonborn body does not overlap it",
+    "verification": "verified"
+  },
+  {
+    "id": "building",
+    "owner": "both",
+    "route": "Actual Minecraft placement, mining and section/block-entity meshes rendered into original Skyrim",
+    "source": "Creator requests building; pinned MIT SkyCraft WorldExporter and SkyClip; sheets/building_rules.json",
+    "requires": [
+      "rendering",
+      "input",
+      "collision"
+    ],
+    "acceptance": "Place, see, stand on, break and recover actual Minecraft blocks; persist them through reload",
+    "verification": "pending"
+  },
+  {
+    "id": "interaction",
+    "owner": "host",
+    "route": "Native Skyrim activation and native menus; G for doors, containers, NPCs, items and furniture",
+    "source": "Creator requests working chests and Skyrim story; actual native input mapping; sheets/native_input_bindings.json",
+    "requires": [
+      "input",
+      "movement"
+    ],
+    "acceptance": "Open actual Skyrim chest, transfer an item, close menu and resume Minecraft control; native dialogue and doors operate",
+    "verification": "pending"
+  },
+  {
+    "id": "campaign",
+    "owner": "host",
+    "route": "Original Skyrim save, quest scripts, dialogue and story remain authoritative; Steve is the player avatar",
+    "source": "Creator explicitly replaces raid-only design with Skyrim story and Steve as Dragonborn",
+    "requires": [
+      "interaction",
+      "avatar",
+      "lifecycle"
+    ],
+    "acceptance": "A normal Skyrim story save loads and progresses through a real quest interaction with Steve; scripted scenes yield native control correctly",
+    "verification": "pending"
+  },
+  {
+    "id": "stealth",
+    "owner": "host",
+    "route": "Actual Minecraft crouch drives native Actor::SetSneaking; native detection, ownership, crime and HUD remain authoritative",
+    "source": "Creator reports theft and stealth broken; Classic Actor SetSneaking and normal ActivateHandler, pinned SkyCraft SyncSneak behavior",
+    "requires": [
+      "input",
+      "interaction"
+    ],
+    "acceptance": "Hold crouch: native sneak and real detection eye respond; release: native stands. Steal an owned object with witness: actual ownership and crime response, no fabricated bounty",
+    "verification": "pending"
+  }
+]

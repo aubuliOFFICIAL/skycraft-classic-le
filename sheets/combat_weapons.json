@@ -1,0 +1,8 @@
+[
+ {"id":"Unarmed","guestKind":0,"nativeForm":80258,"skill":-1,"source":"Pinned MIT SkyCraft Combat.cpp impact weapon mapping; LE vanilla Iron Mace is read from the host copy"},
+ {"id":"Blade","guestKind":1,"nativeForm":77495,"skill":6,"source":"Pinned MIT SkyCraft Combat.cpp; vanilla Iron Sword 00012EB7, OneHanded"},
+ {"id":"Axe","guestKind":2,"nativeForm":79760,"skill":7,"source":"Pinned MIT SkyCraft Combat.cpp; vanilla Iron War Axe 00013790, TwoHanded gameplay mapping"},
+ {"id":"Blunt","guestKind":3,"nativeForm":80258,"skill":6,"source":"Pinned MIT SkyCraft Combat.cpp; vanilla Iron Mace 00013982, OneHanded"},
+ {"id":"Pierce","guestKind":4,"nativeForm":80254,"skill":7,"source":"Pinned MIT SkyCraft Combat.cpp; vanilla Iron Dagger 0001397E, TwoHanded gameplay mapping"},
+ {"id":"Arrow","guestKind":5,"nativeForm":80261,"skill":8,"source":"Pinned MIT SkyCraft Combat.cpp; vanilla Hunting Bow 00013985, Marksman"}
+]

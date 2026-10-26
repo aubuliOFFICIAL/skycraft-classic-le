@@ -1,0 +1,132 @@
+[
+  {
+    "id": "HealthModifier",
+    "value": 2,
+    "source": "LE live actor-value modifier code branch2 is damage modifier"
+  },
+  {
+    "id": "DamageBaseScale",
+    "value": 5,
+    "source": "Pinned MIT SkyCraft Combat.cpp damage formula"
+  },
+  {
+    "id": "DamageLevelScale",
+    "value": 0.25,
+    "source": "Pinned MIT SkyCraft Combat.cpp damage formula"
+  },
+  {
+    "id": "DiagnosticEnemyDistance",
+    "value": 175,
+    "source": "Isolated dungeon QA placement 2.5 Minecraft blocks ahead; not release encounter content"
+  },
+  {
+    "id": "DiagnosticMinimumHeight",
+    "value": 1.4,
+    "source": "QA selects a standing humanoid for a level-camera hit test; not an enemy restriction in the release"
+  },
+  {
+    "id": "EquipmentSettleMs",
+    "value": 600,
+    "source": "QA waits for native placement and Minecraft proxy synchronization before real equipment input"
+  },
+  {
+    "id": "HitCriticalMask",
+    "value": 8,
+    "source": "LE AttackProcessing Struct00797220 critical flag"
+  },
+  {
+    "id": "HitSneakMask",
+    "value": 2048,
+    "source": "LE AttackProcessing Struct00797220 sneak flag"
+  },
+  {
+    "id": "HitPowerMask",
+    "value": 65536,
+    "source": "LE AttackProcessing Struct00797220 power attack flag"
+  },
+  {
+    "id": "ArcherySkill",
+    "value": 8,
+    "source": "LE actor value enum Marksman"
+  },
+  {
+    "id": "OneHandedSkill",
+    "value": 6,
+    "source": "LE actor value enum OneHanded"
+  },
+  {
+    "id": "MaximumPoseGapBlocks",
+    "value": 16.0,
+    "source": "Port guard rejects disconnected or stale guest poses over one collision region pair; not a gameplay movement speed"
+  },
+  {
+    "id": "CombatPoseToleranceBlocks",
+    "value": 1.0,
+    "source": "Port guard discards hits when player positions disagree by more than one block"
+  },
+  {
+    "id": "ForwardTestKey",
+    "value": 26,
+    "source": "Pinned protocol SDL W scancode; real Minecraft forward input"
+  },
+  {
+    "id": "ForwardTestHoldMs",
+    "value": 2000,
+    "source": "Bounded two-second movement diagnostic in isolated own dungeon save"
+  },
+  {
+    "id": "RightTestKey",
+    "value": 7,
+    "source": "Pinned protocol SDL D scancode; real Minecraft strafe input"
+  },
+  {
+    "id": "LeftTestKey",
+    "value": 4,
+    "source": "Pinned protocol SDL A scancode; real Minecraft strafe input"
+  },
+  {
+    "id": "DepthBypassDefault",
+    "value": 0,
+    "source": "Owned diagnostic only; native world occlusion must remain on in normal gameplay and acceptance"
+  },
+  {
+    "id": "DepthBypassZValue",
+    "value": 0,
+    "source": "D3DZB_FALSE for owned diagnostic isolation only; cannot serve as gameplay acceptance"
+  },
+  {
+    "id": "DeathDamageExtra",
+    "value": 1.0,
+    "source": "Pinned upstream KillPlayer passes current native health plus one"
+  },
+  {
+    "id": "KillPrimaryFlag",
+    "value": 1,
+    "source": "LE KillActor ABI; upstream death request true flag"
+  },
+  {
+    "id": "KillSecondaryFlag",
+    "value": 0,
+    "source": "LE KillActor ABI; upstream death request false flag"
+  },
+  {
+    "id": "AimTestRangeBlocks",
+    "value": 8.0,
+    "source": "Owned automation may aim at an existing nearby live hostile; never moves it, disables AI or invents hits"
+  },
+  {
+    "id": "AimTestHeightFraction",
+    "value": 0.6,
+    "source": "Pinned upstream HitNode fallback uses chest at 60 percent of actual actor height"
+  },
+  {
+    "id": "NativeTeleportThresholdBlocks",
+    "value": 2.0,
+    "source": "Detect host-originated displacement above two blocks between bridge frames; request real guest teleport before pose ownership resumes"
+  },
+  {
+    "id": "MaximumCameraDistanceBlocks",
+    "value": 8.0,
+    "source": "Bounded detached-camera guard; actual distance still comes from Minecraft collision zoom"
+  }
+]

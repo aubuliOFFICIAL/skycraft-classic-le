@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Activate",
+    "event": "Activate",
+    "scanCode": 255,
+    "source": "Native Activate temporarily unbound while bridge handles G through normal native activation; restore original binding for menus and inactive bridge"
+  },
+  {
+    "id": "Favorites",
+    "event": "Favorites",
+    "scanCode": 255,
+    "source": "Reserve Q for real Minecraft item drops while linked; restore original native key when inactive"
+  },
+  {
+    "id": "Wait",
+    "event": "Wait",
+    "scanCode": 35,
+    "source": "Pinned SkyCraft uses H for native wait so T can remain Minecraft chat"
+  }
+]

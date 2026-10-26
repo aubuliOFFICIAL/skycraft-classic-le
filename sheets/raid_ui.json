@@ -1,0 +1,1 @@
+[{"id":"Panel","x":28,"y":100,"width":768,"height":116,"fontSize":24,"padding":12,"background":2281701376,"textColor":4294962113,"controls":"E: inventory  |  G: Skyrim doors and loot","source":"Own in-game raid objective UI; text rasterized from the player's Windows font at runtime"}]

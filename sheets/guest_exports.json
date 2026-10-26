@@ -1,0 +1,22 @@
+[
+  {
+    "id": "Arrows",
+    "enabled": true,
+    "source": "Classic renderer receives RenScene; upstream deliberately excludes arrows for its separate SE-native renderer"
+  },
+  {
+    "id": "CustomGeometry",
+    "enabled": true,
+    "source": "Installed Minecraft26.3 CustomGeometryRenderer.render(PoseStack.Pose, VertexConsumer); call actual game renderer instead of recreating arrow mesh"
+  },
+  {
+    "id": "Items",
+    "enabled": true,
+    "source": "Read actual ItemEntity renderer into the native scene; no item textures shipped"
+  },
+  {
+    "id": "PlayerBody",
+    "enabled": true,
+    "source": "Render real local Minecraft player in detached views; native Dragonborn geometry suppressed while linked"
+  }
+]

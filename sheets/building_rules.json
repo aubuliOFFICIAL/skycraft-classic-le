@@ -1,0 +1,5 @@
+[
+ {"id":"MaximumSections","value":512,"source":"Bounded native cache of actual Minecraft section meshes; removals and world clears invalidate entries"},
+ {"id":"MaximumSectionVertices","value":200000,"source":"Validate actual protocol section triangle lists before allocating"},
+ {"id":"MaximumCachedVertices","value":2000000,"source":"Bound total native mesh memory; reject oversized updates without corrupting existing cache"}
+]

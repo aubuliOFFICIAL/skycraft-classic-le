@@ -1,0 +1,12 @@
+[
+  {
+    "id": "Horizontal",
+    "value": 1.25,
+    "source": "Pinned SkyCraft nearby pickup radius; vanilla playerTouch retains delay, owner and capacity rules"
+  },
+  {
+    "id": "Vertical",
+    "value": 2.0,
+    "source": "Accommodate real triangle/voxel floor height differences without collecting across the dungeon"
+  }
+]

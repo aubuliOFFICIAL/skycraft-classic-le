@@ -1,0 +1,6 @@
+[
+ {"id":"SeparateAlpha","state":"D3DRS_SEPARATEALPHABLENDENABLE","value":1,"source":"Premultiplied intermediate stores coverage separately from RGB; D3D9 render-state API"},
+ {"id":"AlphaSource","state":"D3DRS_SRCBLENDALPHA","value":"D3DBLEND_ONE","source":"Store source coverage, not coverage squared"},
+ {"id":"AlphaDestination","state":"D3DRS_DESTBLENDALPHA","value":"D3DBLEND_INVSRCALPHA","source":"Accumulate destination coverage behind source"},
+ {"id":"AlphaAdd","state":"D3DRS_BLENDOPALPHA","value":"D3DBLENDOP_ADD","source":"Coverage union for transparent projectile target"}
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "DiagnosticBootstrap",
+    "hostExe": "TESV.exe",
+    "hostMachine": 332,
+    "proxyName": "dinput8.dll",
+    "exportName": "DirectInput8Create",
+    "expectedPointerBits": 32,
+    "logDirectory": "SkyCraftClassic",
+    "logFile": "bootstrap.log",
+    "gameplayImplemented": false,
+    "source": "Installed TESV.exe PE imports and machine; diagnostic-only scope"
+  }
+]
